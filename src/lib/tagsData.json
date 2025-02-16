@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "tags": [
+        { "name": "Nike Shoes", "price": "$120" },
+        { "name": "Adidas Cap", "price": "$30" },
+        { "name": "Apple Watch", "price": "$250" },
+        { "name": "Ray-Ban Sunglasses", "price": "$150" },
+        { "name": "Samsung Earbuds", "price": "$100" }
+      ]
+    },
+    {
+      "id": 2,
+      "tags": [
+        { "name": "Gaming Laptop", "price": "$1200" },
+        { "name": "Mechanical Keyboard", "price": "$80" },
+        { "name": "Noise Cancelling Headphones", "price": "$200" },
+        { "name": "Smartphone Case", "price": "$20" },
+        { "name": "Wireless Charger", "price": "$40" }
+      ]
+    }
+  ]
