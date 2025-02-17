@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Toastd Video Reels
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Toastd Video Reels is a web application that mimics the Instagram Reels experience, showcasing video content with smooth vertical scrolling
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Thought Process and Design Choices
+
+### 1. Framework Selection
+
+- **Next.js**: Chosen for its server-side rendering capabilities, optimized performance, and seamless integration with React.
+- **React**: Used for building a dynamic and interactive user interface.
+
+### 2. Styling
+
+- **Tailwind CSS**: Utilized for rapid UI development and consistent styling across the application.
+- **shadcn/ui**: Employed for pre-built, customizable UI components that align with modern design standards.
+
+### 3. Video Playback
+
+- Implemented autoplay and pause functionality based on viewport visibility using the Intersection Observer API.
+- Added a global mute/unmute control for better user experience.
+
+### 4. Infinite Scrolling
+
+- Implemented to load more videos as the user scrolls, enhancing the continuous browsing experience.
+
+### 6. Responsive Design
+
+- Ensured the application is fully responsive and works well on mobile, tablet, and desktop devices.
+- Used relative units and flexible layouts to maintain consistency across different screen sizes.
+
+## Setup Instructions
+
+### 1. Clone the repository:
+
+```sh
+git clone 
+cd instagram-reel-clone
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Set up environment variables:
 
-## Learn More
+- Create a `.env.local` file in the root directory.
+- Add the following environment variables:
+  ```sh
+  NEXT_PUBLIC_PEXELS_API_KEY=your_pexels_api_key
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Smooth vertical scrolling**: Seamless transitions between videos.
+- **Auto-play and pause**: Videos play only when visible.
+- **Global mute/unmute toggle**: Control sound for all videos.
+- **Infinite scrolling**: Loads new videos as the user scrolls.
+- **Fully responsive**: Works across mobile, tablet, and desktop devices.
+
+## Tech Stack
+
+- **Next.js** – Server-side rendering and optimized performance.
+- **React** – UI components and interactivity.
+- **Tailwind CSS** – Modern styling for a sleek interface.
+- **shadcn/ui** – Pre-built UI components.
+- **Intersection Observer API** – Handles video visibility and playback.
+- **Pexels API** – Fetches high-quality video content.
+
+## Deployment
+
+To deploy on **Vercel**, run:
+
+```sh
+npm run build
+vercel deploy
+```
+
+
