@@ -86,16 +86,15 @@ export default function VideoReel({ video, isMuted, index }) {
       )}
 
       {/* Play/Pause Button */}
-      <div className="absolute inset-0 flex z-10 items-center justify-center">
-        <Button
-          variant="ghost"
-          size="icon"
-          className="text-white bg-black/50 hover:bg-black/70"
-          onClick={handlePlayPause}
-        >
-          {isPlaying ? <Pause className="h-12 w-12" /> : <Play className="h-12 w-12" />}
-        </Button>
-      </div>
+     <div className="absolute inset-0 flex z-10 items-center justify-center pointer-events-none">
+       <Button
+         variant="ghost"
+         size="icon"
+         className="text-white bg-black/50 hover:bg-black/70 pointer-events-auto"
+         onClick={handlePlayPause}>
+       {isPlaying ? <Pause className="h-12 w-12" /> : <Play className="h-12 w-12" />}
+     </Button>
+    </div>
 
       {/* Like & Share Buttons */}
       <div className="absolute right-4 bottom-20 sm:right-[-5rem] flex flex-col items-center gap-6">
